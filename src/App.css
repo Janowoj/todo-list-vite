@@ -1,0 +1,11 @@
+/* FILEPATH: /c:/Users/user/OneDrive/Dokumenty/ZrozumiecReact/mini-project/todo-list/src/App.css */
+
+body {
+  background-color: #6d9b84;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
