@@ -1,18 +1,18 @@
 import './App.css';
 import { useState } from 'react';
 
-const todoList = [
-  {
-    id: 1,
-    task: 'wyrzucić śmieci',
-  },
-  {
-    id: 2,
-    task: 'zrobić zakupy',
-  },
-];
-
 function App() {
+  const todoList = [
+    {
+      id: 1,
+      task: 'wyrzucić śmieci',
+    },
+    {
+      id: 2,
+      task: 'zrobić zakupy',
+    },
+  ];
+
   const [isInputShown, setIsInputShown] = useState(false);
   const [taskList, setTaskList] = useState(todoList);
   const [inputValue, setInputValue] = useState('');
@@ -60,7 +60,7 @@ function App() {
 
   return (
     <div className="p-4 border-4 border-black rounded-lg bg-white">
-      <div className="flex flex-row justify-between">
+      <header className="flex flex-row justify-between">
         <h1 className="mb-2 font-bold self-center">
           DO ZROBIENIA{' '}
           {`${
@@ -69,8 +69,8 @@ function App() {
               : '0' + new Date().getDate()
           }/${
             new Date().getMonth().length > 1
-              ? new Date().getMonth()
-              : '0' + new Date().getMonth()
+              ? new Date().getMonth() + 1
+              : '0' + (new Date().getMonth() + 1)
           }/${new Date().getFullYear()}`}
           :
         </h1>
@@ -82,7 +82,7 @@ function App() {
             +
           </button>
         )}
-      </div>
+      </header>
       {/* <hr className="my-2 bg-slate-900 h-1" /> */}
       <div className="flex flex-col">
         <label htmlFor="text-input" className="font-semibold">
