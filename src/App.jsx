@@ -24,7 +24,7 @@ function App() {
       <header className="flex items-center justify-between gap-5 mb-3">
         <div>
           <h1 className="mb-2 font-bold self-center">
-            DO ZROBIENIA{' '}
+            TODO
             {`${
               new Date().getDate() > 9
                 ? new Date().getDate()
