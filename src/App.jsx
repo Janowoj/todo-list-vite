@@ -23,8 +23,8 @@ function App() {
     <div className="inline-block px-6 py-4 border-4 border-black rounded-md bg-white max-w-screen-md ">
       <header className="flex items-center justify-between gap-5 mb-3">
         <div>
-          <h1 className="mb-2 font-bold self-center">
-            TODO
+          <h1 className="mb-2 font-bold self-center text-xl">
+            {`${'Todo '}`}
             {`${
               new Date().getDate() > 9
                 ? new Date().getDate()

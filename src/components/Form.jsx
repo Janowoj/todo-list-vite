@@ -21,7 +21,7 @@ export function Form({ onFormSubmit }) {
           setInputValue(e.target.value);
         }}
         type="text"
-        className="max-w-full h-11 border-2 border-black rounded"
+        className="w-full h-11 border-2 border-black rounded"
         id="text"
         value={inputValue}
       />
